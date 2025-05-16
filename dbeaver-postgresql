@@ -1,0 +1,14 @@
+create table passengers(
+id SERIAL primary key,
+name TEXT,
+gender TEXT,
+age INTEGER,
+survived BOOLEAN
+);
+
+insert into passengers (name,gender,age,survived) values
+('a','M',22,true ),
+('b','F',22,true),
+('c','F',22,false);
+
+select * from passengers
